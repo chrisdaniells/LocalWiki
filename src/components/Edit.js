@@ -1,7 +1,7 @@
 import React from 'react';
 const { dialog } = require('electron').remote;
 
-import BodyEditor, { Quill, Mixin, Toolbar } from 'react-quill';
+import BodyEditor, { Quill } from 'react-quill';
 import queryString from 'query-string';
 
 import BackButton from './BackButton';
