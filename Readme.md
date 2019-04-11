@@ -42,3 +42,4 @@ Currently only available on Windows.
 - Make Search Results absolute to float over page content
 - Standardise variable & function names
 - Allow for varied template property text case
+- Enable Print Page functionality in Electron
