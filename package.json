@@ -1,0 +1,43 @@
+{
+  "name": "localwiki",
+  "productName": "LocalWiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack",
+    "bs": "webpack && npm start",
+    "builder": "npm run build && build",
+    "packager": "npm run build && electron-packager . --ignore=^/src --icon=public/he.ico --overwrite"
+  },
+  "build": {
+    "appId": "LocalWiki",
+    "win": {
+      "target": "portable"
+    }
+  },
+  "author": "Christopher Daniells",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "babel-register": "^6.26.0",
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0",
+    "electron-packager": "^13.1.1",
+    "fuzzy-search": "^3.0.1",
+    "query-string": "^6.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-html-parser": "^2.0.2",
+    "react-quill": "^1.3.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
