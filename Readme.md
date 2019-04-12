@@ -38,8 +38,5 @@ Currently only available on Windows.
 
 # TODO
 - Refactor React Components (Particularly Edit.js!)
-- Restyle "Create Page" template dropdown
-- Make Search Results absolute to float over page content
 - Standardise variable & function names
 - Allow for varied template property text case
-- Enable Print Page functionality in Electron
