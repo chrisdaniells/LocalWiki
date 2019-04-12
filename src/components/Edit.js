@@ -384,7 +384,7 @@ export default class Edit extends React.Component {
             this.setState({ page }, () => { this.save(resetDateCreatedOnFail) });
         } else {
             this.setState({ 
-                errorMsg: err,
+                errorMsg: validateMessages,
                 showError: true
             });
             setTimeout(() => {
