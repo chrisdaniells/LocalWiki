@@ -677,14 +677,23 @@ section {
 /*/////////////////////////////////////////////////////////*/
 
 .CreatePageButton {
-    display: inline-block;
+    position: relative;
+    width: 100%;
 }
 .CreatePageButton .CreatePageButton_Arrow {
     display: inline-block;
     border-left: 1px solid white;
+    font-family: arial;
+    font-size: 11px;
+    height: 37px;
+    vertical-align: top;
 }
 .CreatePageButton_Dropdown {
     border-top: 1px solid white;
+    position: absolute;
+    right: 0;
+    min-width: 123px;
+    max-width: 250px;
 }
 .CreatePageButton_Dropdown ul {
     list-style-type: none;

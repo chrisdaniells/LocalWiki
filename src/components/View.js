@@ -116,6 +116,14 @@ export default class View extends React.Component {
                         >
                             <button className="StyledButton">Edit</button>
                         </Link>
+                        <Link 
+                            to={"/print/" + this.state.id}
+                            className="Edit u-float-right"
+                            style={{ marginRight: "20px" }}
+                            target="_blank"
+                        >
+                            <button className="StyledButton-grey">Print</button>
+                        </Link>
                     </div>
                 }
 

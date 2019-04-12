@@ -10,6 +10,27 @@ export default class CratePageButton extends React.Component {
         this.state = {
             show: false
         }
+
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+    }
+
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
+    setWrapperRef(node) {
+        this.wrapperRef = node;
+    }
+
+    handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+          this.setState({ show: false });
+        }
     }
 
     generateTemplateList() {
@@ -35,7 +56,7 @@ export default class CratePageButton extends React.Component {
 
     render() {
         return(
-            <div className="CreatePageButton">
+            <div className="CreatePageButton" ref={this.setWrapperRef}>
                 <Link to={"/edit/" + (this.props.create ? "?create=" + this.props.create : "")}><button className="StyledButton">Create Page</button></Link>
                 <button className="CreatePageButton_Arrow StyledButton" onClick={this.showList.bind(this)}>V</button>
                 <div className={"CreatePageButton_Dropdown" + (!this.state.show ? " u-hidden" : "")}>

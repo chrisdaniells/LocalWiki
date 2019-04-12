@@ -18,7 +18,7 @@ export default class Print extends React.Component {
     componentDidMount() {
         document.body.style.backgroundColor = "white";
         document.getElementsByTagName('header')[0].style.display = "none";
-        document.getElementsByTagName('section')[0].setAttribute("style", "min-width: 100%; max-width: none");
+        document.getElementsByTagName('section')[0].setAttribute("style", "min-width: 100%; max-width: none; top: 0");
         this.fetchPage();
     }
 
@@ -33,12 +33,14 @@ export default class Print extends React.Component {
         if (page) {
             this.setState({
                 id: this.props.match.params.id,
-                page: res
+                page: page
             });
         }
     }
 
     render() {
+        window.print();
+        
         return(
             <div>
                 {this.state.page &&
@@ -55,9 +57,12 @@ export default class Print extends React.Component {
                         <div className="u-div"></div>
                         
                         {this.state.page.details.length > 0 &&
-                            <Details details={this.state.page.details} />
+                            <div>
+                                <Details details={this.state.page.details} />
+                                <div className="u-div"></div>
+                            </div>
+                            
                         }
-                        <div className="u-div"></div>
 
                         {this.state.page.preface.length > 0 &&
                             <div className="Page_preface">

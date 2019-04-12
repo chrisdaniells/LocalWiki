@@ -32,11 +32,11 @@ export default class App extends React.Component{
 
     render() {
         return(
-            <div>
+            <div style={{ position: "relative" }}>
                 <div className="u-card">
                     Welcome to Heruvia Encyclopedia. This online resource has been created to archive and organise all known information about the Heruvian Saga. 
                 </div>
-                <div className="u-card">
+                <div className="u-card" style={{ position: "absolute", width: "100%", zIndex: "998" }}>
                     <SearchBar hidePreface={false}/>
                 </div>
                 
