@@ -28,7 +28,7 @@ Currently only available on Windows.
 - Create, Edit and View Pages
 - Create Page By Template (Person, City, Animal, etc.)
 - WYSIWYG Editor for Preface & Body (Quill)
-- Add auto-generated local links using a "#" prefix
+- Add auto-generated local Page links using a "#" prefix
 - Drag & Drop Reorder Details Table Elements
 - Upload Main Page Image and Unlimited Additional Images
 - Search Bar (Fuzzy-Search)
@@ -42,3 +42,4 @@ Currently only available on Windows.
 - Make Search Results absolute to float over page content
 - Standardise variable & function names
 - Allow for varied template property text case
+- Enable Print Page functionality in Electron
