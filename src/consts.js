@@ -7,8 +7,8 @@ export const IMGS =  path.normalize(path.resolve(__dirname,'images')) + "\\";
 export const THUMBS = IMGS + 'thumbnails';
 
 export const CATEGORIES = {
-    category1 : [  // parent category title
-        "biographies", // child subcategory title
+    category1 : [  // parent category title. Must be in lower case.
+        "biographies", // child subcategory title. Must be in lower case.
         "linguistics",
         "theology"
     ],

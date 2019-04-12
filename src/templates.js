@@ -20,7 +20,8 @@ export const page = {
 export const predefined = [
     /* Template Categories and Subcategories must match ones defined
        in consts.js. If not, they will not be included as part of the
-       pre-populated fields when creating a new page */
+       pre-populated fields when creating a new page. Please use 
+       lower case. */
     {
         name: "Example Person", // Template Name
         category: "category1", // Category (must be lower case)

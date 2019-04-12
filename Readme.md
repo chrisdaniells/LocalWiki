@@ -39,4 +39,3 @@ Currently only available on Windows.
 # TODO
 - Refactor React Components (Particularly Edit.js!)
 - Standardise variable & function names
-- Allow for varied template property text case
